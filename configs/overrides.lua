@@ -1,6 +1,9 @@
 local M = {}
 
 M.treesitter = {
+  dependencies = {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+  },
   ensure_installed = {
     -- nvim
     "vim",
@@ -29,6 +32,11 @@ M.treesitter = {
     -- disable = {
     --   "python"
     -- },
+  },
+
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
   },
 }
 

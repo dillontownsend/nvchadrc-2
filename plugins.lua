@@ -22,6 +22,19 @@ local plugins = {
     end, -- Override to setup mason-lspconfig
   },
 
+  {
+    "numToStr/Comment.nvim",
+    keys = { "gcc", "gbc" },
+    init = function()
+      require("core.utils").load_mappings "comment"
+    end,
+    config = function()
+      require("Comment").setup {
+        pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
+      }
+    end,
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
@@ -72,6 +85,18 @@ local plugins = {
     lazy = false,
     config = function()
       require "custom.configs.lazygit"
+    end,
+  },
+
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    lazy = false,
+    config = function()
+      require("nvim-treesitter.configs").setup {
+        dependencies = {
+          "JoosepAlviste/nvim-ts-context-commentstring",
+        },
+      }
     end,
   },
 }

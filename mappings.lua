@@ -20,6 +20,15 @@ M.general = {
   },
 }
 
+M.comment = {
+  v = {
+    ["<leader>/"] = {
+      "<ESC><cmd>lua require('Comment.api').toggle.blockwise(vim.fn.visualmode())<CR>",
+      "toggle comment",
+    },
+  },
+}
+
 M.lspconfig = {
   n = {
     ["<leader>fd"] = {
