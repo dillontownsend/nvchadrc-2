@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -53,6 +53,29 @@ local plugins = {
   --   enabled = false
   -- },
 
+  {
+    "windwp/nvim-ts-autotag",
+    init = function()
+      require("core.utils").lazy_load "nvim-ts-autotag"
+    end,
+    config = function()
+      require("nvim-treesitter.configs").setup {
+        autotag = {
+          enable = true,
+        },
+      }
+    end,
+  },
+
+  {
+    "kdheepak/lazygit.nvim",
+    init = function()
+      require("core.utils").lazy_load "lazygit.nvim"
+    end,
+    config = function()
+      require "custom.configs.lazygit"
+    end,
+  },
 }
 
 return plugins
