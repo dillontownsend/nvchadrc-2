@@ -69,9 +69,7 @@ local plugins = {
 
   {
     "kdheepak/lazygit.nvim",
-    init = function()
-      require("core.utils").lazy_load "lazygit.nvim"
-    end,
+    lazy = false,
     config = function()
       require "custom.configs.lazygit"
     end,
