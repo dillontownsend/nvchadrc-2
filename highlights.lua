@@ -15,6 +15,9 @@ M.override = {
   CursorLineNr = {
     fg = "#52AD70",
   },
+  CursorLine = {
+    bg = "black2",
+  },
 }
 
 ---@type HLTable
