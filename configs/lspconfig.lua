@@ -15,6 +15,7 @@ local servers = { -- web dev
   "tsserver",
   "eslint",
   "emmet_ls",
+  "svelte",
 
   -- c#
   "csharp_ls",

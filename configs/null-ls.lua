@@ -11,7 +11,9 @@ local sources = {
   b.formatting.stylua,
 
   -- webdev stuff
-  b.formatting.prettierd,
+  b.formatting.prettierd.with {
+    extra_filetypes = { "svelte" },
+  },
 
   -- rust
   b.formatting.rustfmt,

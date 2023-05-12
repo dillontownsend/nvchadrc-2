@@ -17,6 +17,7 @@ M.treesitter = {
     "javascript",
     "typescript",
     "tsx",
+    "svelte",
 
     -- rust
     "rust",
@@ -57,6 +58,7 @@ M.mason = {
     "typescript-language-server",
     "eslint-lsp",
     "emmet-ls",
+    "svelte-language-server",
     -- web dev formatter
     "prettierd",
 
