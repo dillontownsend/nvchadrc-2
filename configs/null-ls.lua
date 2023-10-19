@@ -23,6 +23,9 @@ local sources = {
 
   -- go
   b.formatting.gofumpt,
+
+  -- ocaml
+  b.formatting.ocamlformat
 }
 
 null_ls.setup {

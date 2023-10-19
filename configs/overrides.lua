@@ -27,6 +27,9 @@ M.treesitter = {
 
     -- go
     "go",
+
+    -- ocaml
+    "ocaml"
   },
   indent = {
     enable = true,
@@ -76,6 +79,11 @@ M.mason = {
     "gopls",
     -- go formatter
     "gofumpt",
+
+    -- ocaml lsp
+    "ocaml-lsp",
+    -- ocaml formatter
+    "ocamlformat",
   },
 }
 

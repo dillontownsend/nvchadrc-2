@@ -28,6 +28,9 @@ local servers = { -- web dev
 
   -- go
   "gopls",
+
+  -- ocaml
+  "ocamllsp",
 }
 
 for _, lsp in ipairs(servers) do
