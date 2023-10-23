@@ -29,7 +29,10 @@ M.treesitter = {
     "go",
 
     -- ocaml
-    "ocaml"
+    "ocaml",
+
+    -- haskell
+    "haskell",
   },
   indent = {
     enable = true,
@@ -84,6 +87,11 @@ M.mason = {
     "ocaml-lsp",
     -- ocaml formatter
     "ocamlformat",
+
+    -- haskell lsp
+    "haskell-language-server",
+    -- haskell formatter
+    "fourmolu",
   },
 }
 

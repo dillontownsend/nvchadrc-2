@@ -25,7 +25,10 @@ local sources = {
   b.formatting.gofumpt,
 
   -- ocaml
-  b.formatting.ocamlformat
+  b.formatting.ocamlformat,
+
+  -- haskell
+  b.formatting.fourmolu,
 }
 
 null_ls.setup {
