@@ -29,6 +29,9 @@ local sources = {
 
   -- haskell
   b.formatting.fourmolu,
+
+  -- python
+  b.formatting.yapf,
 }
 
 null_ls.setup {

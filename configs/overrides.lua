@@ -33,6 +33,9 @@ M.treesitter = {
 
     -- haskell
     "haskell",
+
+    -- python
+    "python",
   },
   indent = {
     enable = true,
@@ -92,6 +95,11 @@ M.mason = {
     "haskell-language-server",
     -- haskell formatter
     "fourmolu",
+
+    -- python lsp
+    "pyright",
+    -- python formatter
+    "yapf",
   },
 }
 

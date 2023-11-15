@@ -34,6 +34,9 @@ local servers = { -- web dev
 
   -- haskell
   "hls",
+
+  -- python
+  "pyright",
 }
 
 for _, lsp in ipairs(servers) do
